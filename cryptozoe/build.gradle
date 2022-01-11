@@ -4,23 +4,24 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     mavenLocal()
 }
 
 dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
-    implementation 'io.quarkus:quarkus-hibernate-reactive'
-    implementation 'io.quarkus:quarkus-hibernate-orm'
-    implementation 'io.quarkus:quarkus-rest-client-reactive'
-    implementation 'io.quarkus:quarkus-flyway'
-    implementation 'io.quarkus:quarkus-jdbc-h2'
-    implementation 'io.quarkus:quarkus-hibernate-validator'
-    implementation 'io.quarkus:quarkus-jdbc-postgresql'
-    implementation 'io.quarkus:quarkus-arc'
-    implementation 'io.quarkus:quarkus-resteasy-reactive'
-    testImplementation 'io.quarkus:quarkus-junit5'
-    testImplementation 'io.rest-assured:rest-assured'
+    implementation 'io.quarkus:quarkus-hibernate-reactive:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-hibernate-orm:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-rest-client-reactive:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-flyway:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-jdbc-h2:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-hibernate-validator:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-jdbc-postgresql:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-arc:2.6.1.Final'
+    implementation 'io.quarkus:quarkus-resteasy-reactive:2.6.1.Final'
+    testImplementation 'io.quarkus:quarkus-junit5:2.6.1.Final'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
 }
 
 group 'pl.apptimist'
